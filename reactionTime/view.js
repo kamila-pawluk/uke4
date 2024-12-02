@@ -1,14 +1,13 @@
 let array = model.app.array;
-let array5 = array.filter(function(item){
-    return [0 - 4].indexOf(item.id) != -1;
-})
+let array5 = array.slice(0,4);
 
-function updateViewLights(){
+
+function updateView(){
     
 
     app.innerHTML = /*HTML*/ `
     <div> 
-    <div> @{array5} </div>
+    <div> @{array[0]} </div>
     </div>
     `
 }
